@@ -1,14 +1,16 @@
 function calc(){
     let a = document.getElementById("s1");
-    let d = a.value;
+    let d = Number(a.value);
     let b = document.getElementById("s2");
-    let m = b.value;
+    let m = Number(b.value);
     let c = document.getElementById("s3");
-    let y = c.value;
+    let y = Number(c.value);
     let currdate = new Date();
     let d1 = currdate.getDate();
     let m1 = currdate.getMonth();
     let y1 = currdate.getFullYear();
+      d1 = d1;
+      m1 = m1+1;
     let yr = (y1-y);
     if(m1>=m && d1>=d)
     document.getElementById('age').innerHTML = ('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+yr);
