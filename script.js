@@ -11,11 +11,14 @@ function calc(){
     let y1 = currdate.getFullYear();
     let yr = (y1-y);
       m1 = m1+1;
-    if(m1>=m && d1>=d)
-    document.getElementById('age').innerHTML = ('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+yr);
+    if(m1>=m){
+      if(m1==m  && d1 >=d)
+        document.getElementById('age').innerHTML = ('Your current age is&nbsp;&nbsp:&nbsp;'+yr);
+        document.getElementById('age').innerHTML = ('Your current age is&nbsp;&nbsp:&nbsp;'+yr);
+    }
     else{
         yr=yr-1;
-    document.getElementById('age').innerHTML = ('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+yr);
+    document.getElementById('age').innerHTML = ('Your current age is&nbsp;&nbsp:&nbsp;'+yr);
     }
 } 
 function clr(){
