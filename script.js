@@ -9,6 +9,7 @@ function calc(){
     let d1 = currdate.getDate();
     let m1 = currdate.getMonth();
     let y1 = currdate.getFullYear();
+    let yr = (y1-y);
       m1 = m1+1;
     if(m1>=m && d1>=d)
     document.getElementById('age').innerHTML = ('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+yr);
